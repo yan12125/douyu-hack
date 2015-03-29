@@ -66,7 +66,7 @@ static void* sb1_tostring(JNIEnv *env, jclass clazz, jstring str)
 {
     dalvik_prepare(&d, &sb1, env);
 
-    void *res = (*env)->CallStaticObjectMethod(clazz, sb1.mid, str);
+    void *res = (*env)->CallStaticObjectMethod(env, clazz, sb1.mid, str);
     my_log("success calling : %s\n", sb1.method_name)
     dalvik_postcall(&d, &sb1);
 

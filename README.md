@@ -7,7 +7,7 @@ Requirements:
 
 How to use:
 
-First, update submodules
+First, clone this repo and update submodules
 
 ```Bash
 git clone https://github.com/yan12125/douyu-hack
@@ -42,12 +42,12 @@ adb push ./libs/armeabi/libdouyu-hack.so /data/local/tmp/
 Run the Douyu App on the phone, click on any of the channels to make sure that the class to inject is already loaded
 
 ```Bash
-adb shell
+fb-adb shell
 su
-ps | grep douyu
 touch douyu-hack.log
 chmod 777 douyu-hack.log
-./hijack -p PID -l ./libdouyu-hack.so
+ps | grep douyu
+./hijack -d -p PID -l /data/local/tmp/libdouyu-hack.so # PID is got in the previous command
 ```
 
 Repeat the action of entering a channel, and view douyu-hack.log for the results.
