@@ -1,0 +1,8 @@
+[submodule "ddi"]
+	path = ddi
+	url = https://github.com/scintill/ddi
+    ignore = dirty
+[submodule "adbi"]
+	path = adbi
+	url = https://github.com/crmulliner/adbi
+    ignore = dirty
