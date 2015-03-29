@@ -1,11 +1,11 @@
 This is a tiny injector for extracting keys for encrypting DouyuTv URLs.
 
-Requirements:
+# Requirements
 * A rooted Android device with libdvm.so as the default virtual machine
 * A recent version of Linux with Android SDK and Android NDK installed
 * [fb-adb](https://github.com/facebook/fb-adb) as a replacement of adb (Optional but recommended)
 
-How to use:
+# How to use
 
 First, clone this repo and update submodules
 
@@ -51,3 +51,6 @@ ps | grep douyu
 ```
 
 Repeat the action of entering a channel, and view douyu-hack.log for the results.
+
+# LICENSE
+Licensed under GPLv3. Visit http://opensource.org/licenses/gpl-3.0.html for more information
