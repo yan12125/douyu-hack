@@ -18,9 +18,8 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := libdouyu-hack
 LOCAL_SRC_FILES := douyu-hack.c.arm
-LOCAL_C_INCLUDES := ../adbi/instruments/base/ ../ddi/dalvikhook/jni/
-LOCAL_LDLIBS    := -L../ddi/dalvikhook/jni/libs -ldl -ldvm 
-LOCAL_LDLIBS    := -Wl,--start-group ../adbi/instruments/base/obj/local/armeabi/libbase.a ../ddi/dalvikhook/obj/local/armeabi/libdalvikhook.a -Wl,--end-group
+LOCAL_C_INCLUDES := ./adbi/instruments/base/ ./ddi/dalvikhook/jni/
+LOCAL_LDLIBS    := -L./ddi/dalvikhook/jni/libs -ldl -ldvm -Wl,--start-group ./adbi/instruments/base/obj/local/armeabi/libbase.a ./ddi/dalvikhook/obj/local/armeabi/libdalvikhook.a -Wl,--end-group
 LOCAL_CFLAGS    := -g -Wall -Wextra
 
 include $(BUILD_SHARED_LIBRARY)
