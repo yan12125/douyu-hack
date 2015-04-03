@@ -44,6 +44,7 @@ Run the Douyu App on the phone, click on any of the channels to make sure that t
 ```Bash
 fb-adb shell
 su
+cd /data/local/tmp/
 touch douyu-hack.log
 chmod 777 douyu-hack.log
 ps | grep douyu
